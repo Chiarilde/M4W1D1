@@ -69,3 +69,47 @@ function createAcronym(phrase) {
 
     return arrayAcronym.join("");
 }
+
+//EXTRA 2//
+function checkAnagrama(str1, str2) {
+    let string1 = str1.toLowerCase();
+    let string2 = str2.toLowerCase();
+    let stringa1 = string1.split("").sort().join();
+    let stringa2 = string2.split("").sort().join();
+    if (stringa1 === stringa2) {
+        return true;
+    } else {
+        return false;
+    }
+}
+//EXTRA 3//
+const anagrammi = ["Roma", "Amor"];
+const nuovoArray = [];
+function checkPossibiliAnagrammi(anagrammi, str) {
+    let paroleAnagrammi = anagrammi.split("").sort();
+    let paroleStringa = str.split("").sort();
+}
+//EXTRA 4//
+function checkPalindromo(stringa) {
+    let stringaModified = stringa.split("").reverse().join("").toLowerCase();
+    if (stringa.toLowerCase() === stringaModified) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+//EXTRA 5//
+function reverseNumber(num) {
+    return String(num).split("").reverse().join("");
+}
+//EXTRA 6//
+function createScala(num) {
+    for (i = 1; i <= num; i++) {
+        console.log("#".repeat(i));
+    }
+}
+//EXTRA 7//
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
